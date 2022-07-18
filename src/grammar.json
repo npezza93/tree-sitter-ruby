@@ -341,7 +341,7 @@
                           "members": [
                             {
                               "type": "SYMBOL",
-                              "name": "method_body"
+                              "name": "body"
                             },
                             {
                               "type": "BLANK"
@@ -395,7 +395,7 @@
                   "members": [
                     {
                       "type": "SYMBOL",
-                      "name": "method_body"
+                      "name": "body"
                     },
                     {
                       "type": "BLANK"
@@ -411,10 +411,6 @@
           ]
         }
       ]
-    },
-    "method_body": {
-      "type": "SYMBOL",
-      "name": "_body"
     },
     "rescue_modifier_arg": {
       "type": "PREC",
@@ -950,7 +946,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "namespace_body"
+              "name": "body"
             },
             {
               "type": "BLANK"
@@ -963,11 +959,7 @@
         }
       ]
     },
-    "namespace_body": {
-      "type": "SYMBOL",
-      "name": "_body"
-    },
-    "_body": {
+    "body": {
       "type": "CHOICE",
       "members": [
         {
@@ -1084,7 +1076,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "namespace_body"
+              "name": "body"
             },
             {
               "type": "BLANK"
@@ -1136,7 +1128,7 @@
                   "members": [
                     {
                       "type": "SYMBOL",
-                      "name": "namespace_body"
+                      "name": "body"
                     },
                     {
                       "type": "BLANK"
@@ -4836,10 +4828,6 @@
         ]
       }
     },
-    "do_block_body": {
-      "type": "SYMBOL",
-      "name": "_body"
-    },
     "do_block": {
       "type": "SEQ",
       "members": [
@@ -4897,7 +4885,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "do_block_body"
+              "name": "body"
             },
             {
               "type": "BLANK"

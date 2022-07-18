@@ -1186,6 +1186,37 @@
     }
   },
   {
+    "type": "body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_statement",
+          "named": true
+        },
+        {
+          "type": "else",
+          "named": true
+        },
+        {
+          "type": "empty_statement",
+          "named": true
+        },
+        {
+          "type": "ensure",
+          "named": true
+        },
+        {
+          "type": "rescue",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "break",
     "named": true,
     "fields": {},
@@ -1379,7 +1410,7 @@
       "required": false,
       "types": [
         {
-          "type": "namespace_body",
+          "type": "body",
           "named": true
         }
       ]
@@ -1581,38 +1612,7 @@
       "required": false,
       "types": [
         {
-          "type": "do_block_body",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "do_block_body",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_statement",
-          "named": true
-        },
-        {
-          "type": "else",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "ensure",
-          "named": true
-        },
-        {
-          "type": "rescue",
+          "type": "body",
           "named": true
         }
       ]
@@ -2368,42 +2368,11 @@
           "named": true
         },
         {
-          "type": "method_body",
+          "type": "body",
           "named": true
         },
         {
           "type": "rescue_modifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "method_body",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_statement",
-          "named": true
-        },
-        {
-          "type": "else",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "ensure",
-          "named": true
-        },
-        {
-          "type": "rescue",
           "named": true
         }
       ]
@@ -2480,38 +2449,7 @@
       "required": false,
       "types": [
         {
-          "type": "namespace_body",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "namespace_body",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_statement",
-          "named": true
-        },
-        {
-          "type": "else",
-          "named": true
-        },
-        {
-          "type": "empty_statement",
-          "named": true
-        },
-        {
-          "type": "ensure",
-          "named": true
-        },
-        {
-          "type": "rescue",
+          "type": "body",
           "named": true
         }
       ]
@@ -3067,7 +3005,7 @@
       "required": false,
       "types": [
         {
-          "type": "namespace_body",
+          "type": "body",
           "named": true
         }
       ]
@@ -3121,7 +3059,7 @@
           "named": true
         },
         {
-          "type": "method_body",
+          "type": "body",
           "named": true
         },
         {
