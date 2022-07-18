@@ -1394,6 +1394,16 @@
           }
         ]
       },
+      "namespace_body": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "body",
+            "named": true
+          }
+        ]
+      },
       "superclass": {
         "multiple": false,
         "required": false,
@@ -1404,16 +1414,6 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "body",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -1596,6 +1596,16 @@
     "type": "do_block",
     "named": true,
     "fields": {
+      "do_block_body": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "body",
+            "named": true
+          }
+        ]
+      },
       "parameters": {
         "multiple": false,
         "required": false,
@@ -1606,16 +1616,6 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "body",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -2338,6 +2338,16 @@
     "type": "method",
     "named": true,
     "fields": {
+      "method_body": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "body",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -2365,10 +2375,6 @@
       "types": [
         {
           "type": "_arg",
-          "named": true
-        },
-        {
-          "type": "body",
           "named": true
         },
         {
@@ -2442,17 +2448,17 @@
             "named": true
           }
         ]
+      },
+      "namespace_body": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "body",
+            "named": true
+          }
+        ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "body",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -2989,6 +2995,16 @@
     "type": "singleton_class",
     "named": true,
     "fields": {
+      "namespace_body": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "body",
+            "named": true
+          }
+        ]
+      },
       "value": {
         "multiple": false,
         "required": true,
@@ -2999,22 +3015,22 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "body",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "singleton_method",
     "named": true,
     "fields": {
+      "method_body": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "body",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -3056,10 +3072,6 @@
       "types": [
         {
           "type": "_arg",
-          "named": true
-        },
-        {
-          "type": "body",
           "named": true
         },
         {
